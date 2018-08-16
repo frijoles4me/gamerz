@@ -6,7 +6,7 @@ export default class Navbar extends Component {
       <div>
         <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
           <div className="container">
-            <a className="navbar-brand" href="landing.html">
+            <a className="navbar-brand" href="/">
               Gamerz
             </a>
             <button
@@ -21,7 +21,7 @@ export default class Navbar extends Component {
             <div className="collapse navbar-collapse" id="mobile-nav">
               <ul className="navbar-nav mr-auto">
                 <li className="nav-item">
-                  <a className="nav-link" href="profiles.html">
+                  <a className="nav-link" href="#">
                     Players
                   </a>
                 </li>
@@ -56,12 +56,12 @@ export default class Navbar extends Component {
 
               <ul className="navbar-nav ml-auto">
                 <li className="nav-item">
-                  <a className="nav-link" href="register.html">
+                  <a className="nav-link" href="/register">
                     Sign Up
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="login.html">
+                  <a className="nav-link" href="/login">
                     Login
                   </a>
                 </li>
