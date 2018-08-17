@@ -1,0 +1,23 @@
+{
+  "name": "gamersite",
+  "version": "1.0.0",
+  "description": "Gaming Websits",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frijoles4me/gamerz.git"
+  },
+  "author": "Alco",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/frijoles4me/gamerz/issues"
+  },
+  "homepage": "https://github.com/frijoles4me/gamerz#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "mongoose": "^5.2.9"
+  }
+}

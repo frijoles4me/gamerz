@@ -48,7 +48,7 @@ export default class Navbar extends Component {
                     </a>
                     <div className="dropdown-divider" />
                     <a className="dropdown-item" href="#">
-                      Teams
+                      Blog
                     </a>
                   </div>
                 </li>
