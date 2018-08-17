@@ -4,7 +4,7 @@ export default class Navbar extends Component {
   render() {
     return (
       <div>
-        <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
+        <nav className="navbar navbar-expand-sm navbar-light bg-light">
           <div className="container">
             <a className="navbar-brand" href="/">
               Gamerz
@@ -34,21 +34,21 @@ export default class Navbar extends Component {
                     aria-haspopup="true"
                     aria-expanded="false"
                   >
-                    Dropdown
+                    Console
                   </a>
                   <div className="dropdown-menu">
                     <a className="dropdown-item" href="#">
-                      Action
+                      PS4
                     </a>
                     <a className="dropdown-item" href="#">
-                      Another action
+                      Xbox
                     </a>
                     <a className="dropdown-item" href="#">
-                      Something else here
+                      PC
                     </a>
                     <div className="dropdown-divider" />
                     <a className="dropdown-item" href="#">
-                      Separated link
+                      Teams
                     </a>
                   </div>
                 </li>

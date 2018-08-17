@@ -24,6 +24,10 @@
   font-size: large;
 }
 
+.navbar .navbar-toggler-icon {
+  background-image: url("https://mdbootstrap.com/img/svg/hamburger4.svg?color=1729B0");
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
