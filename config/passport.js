@@ -18,10 +18,13 @@ module.exports = function(passport) {
       (accessToken, refreshToken, profile, done) => {
         // console.log(accessToken);
         // console.log(profile);
-        const image = profile.photos[0].value.substring(
-          0,
-          profile.photos[0].value.indexOf("?")
-        );
+
+        //accessing the image profile
+        const image = profile.photos[0].value
+          //editing image string and removing everthing after the ?
+          .substring(0, profile.photos[0].value.indexOf("?"));
+
+        //Storing Google User infomation
         const newUser = {
           googleID: profile.id,
           firstName: profile.name.givenName,
@@ -45,4 +48,12 @@ module.exports = function(passport) {
       }
     )
   );
+
+  passport.serializeUser((user, done) => {
+    done(null, user.id);
+  });
+
+  passport.deserializeUser((id, done) => {
+    User.findById(id).then(user => done(null, user));
+  });
 };
