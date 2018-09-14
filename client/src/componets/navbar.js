@@ -1,4 +1,18 @@
 import React, { Component } from "react";
+import axios from "axios";
+
+const login = axios
+  .get("/auth/google")
+  .then(function(response) {
+    console.log(response);
+  })
+  .catch(function(error) {
+    console.log(error);
+  })
+  .then(function() {
+    // always executed
+    console.log("Login In!!!!");
+  });
 
 export default class Navbar extends Component {
   render() {
@@ -63,6 +77,11 @@ export default class Navbar extends Component {
                 <li className="nav-item">
                   <a className="nav-link" href="/login">
                     Login
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href={login}>
+                    Google Login
                   </a>
                 </li>
               </ul>
